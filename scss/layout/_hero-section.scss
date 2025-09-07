@@ -1,0 +1,62 @@
+@use '../abstracts/variables' as *;
+.hero-container {
+  height: 100%;
+  background-image: linear-gradient(
+      89.38deg,
+      #ffffff 30.62%,
+      rgba(255, 255, 255, 0.850898) 41.31%,
+      rgba(255, 255, 255, 0.193204) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url(../images/main-photo.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  padding: 106px 0 0 205px;
+
+  &__subtitle {
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0 0 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+      margin: 0 0 16px 0;
+      padding: 16px 0 0 0;
+    }
+  }
+
+  &__title {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 0.8;
+    font-family: Play;
+    margin-bottom: 32px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 140px;
+      max-width: 568px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text-under-call {
+    color: var(--call-grey);
+    font-size: 11px;
+    line-height: 1.6;
+    padding-bottom: 56px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 226px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 12px;
+      line-height: 1.5;
+      padding-bottom: 126px;
+      margin: 0;
+      
+    }
+  }
+}

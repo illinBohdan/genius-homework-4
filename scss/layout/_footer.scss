@@ -1,0 +1,50 @@
+.footer {
+  background-color: var(--basick-black);
+  background-image: url(../images/background-line.png);
+
+  &__content {
+    display: flex;
+    gap: 186px;
+    padding: 56px 0;
+    position: relative;
+
+    &::after {
+      background-image: url(../images/footer-photo.png);
+      position: absolute;
+      width: 247px;
+      height: 152px;
+      content: '';
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 16px;
+    min-width: 120px;
+  }
+
+  &_link {
+    font-size: 16px;
+    color: var(--white);
+
+    &:hover {
+      color: var(--brand-blue);
+    }
+  }
+
+  &__address {
+    margin-bottom: 16px;
+  }
+
+  &__politik {
+    min-width: 200px;
+    max-height: 24px;
+  }
+
+  &__copy {
+    color: var(--grey-for-small);
+    font-size: 13px;
+    margin-top: 16px;
+  }
+}

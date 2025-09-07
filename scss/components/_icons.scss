@@ -1,0 +1,102 @@
+/* ---------------------------header---------------------------- */
+
+.header-icon {
+  display: inline-block;
+  fill: var(--basick-black);
+
+  &:hover {
+    fill: var(--brand-blue);
+  }
+}
+
+.header-menu {
+  stroke-width: 0;
+  fill: var(--white);
+
+}
+/* ---------------------------stars---------------------------- */
+
+.icon-star64 {
+  position: relative;
+  top: -361px;
+  left: 136px;
+  display: inline-block;
+  fill: var(--star);
+}
+
+.icon-star40 {
+  position: relative;
+  top: -687px;
+  left: 417px;
+  display: inline-block;
+  fill: var(--brand-blue);
+  transform: rotate(60deg);
+}
+
+.icon-star16 {
+  position: relative;
+  top: -481px;
+  left: 370px;
+  display: inline-block;
+  fill: var(--grey-for-small);
+  transform: rotate(8deg);
+}
+
+/* -------------------------------------modal-------------------- */
+
+.icon-close {
+  stroke-width: 4px;
+  stroke: var(--white);
+  fill: transparent;
+  position: relative;
+  top: -2px;
+  left: -7px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+/* -------------------------------------Section why--------------------- */
+
+.why-we-icons {
+  fill: var(--brand-blue);
+  padding-top: 5px;
+  margin-bottom: 8px;
+}
+
+/* ---------------------------------------Section procedur--------------- */
+
+.icon-arrow {
+  stroke-width: 2px;
+  stroke: var(--basick-black);
+  fill: transparent;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    stroke-width: 2px;
+    stroke: var(--white);
+    fill: var(--brand-blue);
+  }
+
+  &.right {
+    transform: rotate(180deg);
+  }
+}
+
+/* ------------------------------------Footer------------------------ */
+
+.footer-icon {
+  display: inline-block;
+  fill: var(--white);
+  margin-right: 24px;
+
+  &:hover {
+    fill: var(--brand-blue);
+  }
+}

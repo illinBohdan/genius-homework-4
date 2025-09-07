@@ -1,0 +1,14 @@
+.text-under-call {
+  color: var(--call-grey);
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 220px;
+  margin: 8px auto 0;
+
+  & a {
+    color: var(--call-grey);
+    font-size: 12px;
+    line-height: 1.5;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as *;
+
+.header-burger {
+  display: block;
+  background-color: transparent;
+  border: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.button-top {
+  background: var(--brand-blue);
+  border: 2px solid var(--brand-blue);
+  border-radius: 24px;
+  width: 186px;
+  height: 44px;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--white);
+  margin: 0 auto 8px;
+  display: block;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: inline;
+    border-radius: 32px;
+    width: 219px;
+    height: 53px;
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  &:active {
+    background-color: transparent;
+    color: var(--basick-black);
+  }
+}
+
+.procedur-button-arrow {
+  background-color: transparent;
+  border: none;
+}
+
+.form-button {
+  background: var(--brand-blue);
+  border: 2px solid var(--brand-blue);
+  border-radius: 32px;
+  width: 281px;
+  height: 53px;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  color: #ffffff;
+
+  &:active {
+    background-color: var(--white);
+    color: var(--basick-black);
+  }
+}

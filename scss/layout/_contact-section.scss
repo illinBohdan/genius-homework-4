@@ -1,0 +1,22 @@
+.contact-content {
+  padding-bottom: 94px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
