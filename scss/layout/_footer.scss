@@ -1,27 +1,54 @@
+@use '../abstracts/variables' as *;
 .footer {
   background-color: var(--basick-black);
   background-image: url(../images/background-line.png);
 
   &__content {
     display: flex;
-    gap: 186px;
-    padding: 56px 0;
-    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 91px 66px;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      gap: 186px;
+      padding: 56px 0;
+      position: relative;
+      text-align: justify;
+    }
 
     &::after {
-      background-image: url(../images/footer-photo.png);
-      position: absolute;
-      width: 247px;
-      height: 152px;
-      content: '';
-      right: 0;
-      bottom: 0;
+      display: none;
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+        background-image: url(../images/footer-photo.png);
+        position: absolute;
+        width: 247px;
+        height: 152px;
+        content: '';
+        right: 0;
+        bottom: 0;
+      }
     }
   }
 
   &__nav {
     margin-bottom: 16px;
     min-width: 120px;
+  }
+
+  &__address-and-social {
+    order: 1;
+    @media screen and (min-width: $bp-desktop) {
+      order: 0;
+    }
+  }
+
+  &__address {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
   }
 
   &_link {
@@ -37,14 +64,35 @@
     margin-bottom: 16px;
   }
 
+  &__social {
+    width: max-content;
+    margin: 0 auto;
+  }
+
   &__politik {
     min-width: 200px;
     max-height: 24px;
   }
 
   &__copy {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      color: var(--grey-for-small);
+      font-size: 13px;
+      margin-top: 16px;
+    }
+  }
+
+  &__copy-for-bp {
+    display: block;
     color: var(--grey-for-small);
     font-size: 13px;
     margin-top: 16px;
+    order: 2;
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }

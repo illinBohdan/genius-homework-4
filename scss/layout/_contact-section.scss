@@ -1,22 +1,36 @@
+@use '../abstracts/variables' as *;
 .contact-content {
   padding-bottom: 94px;
 
   &__title {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 32px;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-family: Play;
+      font-weight: 700;
+      font-size: 64px;
+      margin-bottom: 48px;
+    }
   }
 
   &__content {
     display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 24px;
     justify-content: center;
     max-width: 100%;
+    align-items: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      gap: 32px;
+      //flex-wrap: wrap;
+
+      
+    }
   }
 }
-
-
-
-
-
-

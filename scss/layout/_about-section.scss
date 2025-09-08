@@ -1,6 +1,8 @@
 @use '../abstracts/variables' as *;
 .about-content {
-  display: inline;
+  
+  padding-bottom: 104px;
+
   @media screen and (min-width: $bp-desktop) {
     display: flex;
     padding: 0 100px 176px 100px;
@@ -8,8 +10,11 @@
   }
 
   &__left-block {
-    flex-basis: calc(57% - 16px);
-    padding: 40px 10px 0 0;
+    padding: 0;
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc(57% - 16px);
+      padding: 40px 10px 0 0;
+    }
   }
 
   &__title {
@@ -18,7 +23,7 @@
     font-size: 32px;
     margin-bottom: 24px;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       margin-bottom: 40px;
       font-family: Play;
       font-weight: 700;
@@ -29,7 +34,7 @@
   &__text {
     font-size: 18px;
     line-height: 1;
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       font-size: 22px;
       line-height: 1.7;
     }
@@ -37,12 +42,13 @@
 
   &__text-1 {
     margin-bottom: 16px;
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       margin-bottom: 40px;
     }
   }
 
   &__text-2 {
+    margin-bottom: 0px;
     & span {
       font-weight: 600;
       text-transform: capitalize;

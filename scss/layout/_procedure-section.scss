@@ -1,3 +1,4 @@
+@use '../abstracts/variables' as *;
 .procedur-content {
   padding-bottom: 139px;
 
@@ -9,8 +10,18 @@
     margin: 0 auto;
   }
   &__title {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 32px;
     text-align: center;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+    font-family: Play;
+    font-weight: 700;
+    font-size: 64px;
     margin-bottom: 48px;
+    }
   }
 
   &__list {

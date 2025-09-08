@@ -1,12 +1,18 @@
+@use '../abstracts/variables' as *;
 .form {
   background-color: var(--basick-black);
   background-image: url(../images/background-line.png);
   color: var(--white);
+  border-radius: 32px;    
   font-weight: 600;
   font-size: 22px;
-  border-radius: 32px;
-  min-width: 422px;
-  max-height: 481px;
+  padding: 0 20px;
+
+  @media screen and (min-width: $bp-desktop) {
+    min-width: 422px;
+    max-height: 481px;
+    padding: 0;
+  }
 
   &__content {
     margin: 48px 56px;
