@@ -4,10 +4,16 @@
   display: block;
   background-color: transparent;
   border: none;
+  padding: 16px 16px 0 0;
 
   @media screen and (min-width: $bp-desktop) {
     display: none;
   }
+}
+
+.mobile-close{
+  display: flex;
+  margin-left: auto;
 }
 
 .button-top {

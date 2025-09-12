@@ -19,6 +19,7 @@ body {
   line-height: 1;
   color: var(--basick-black);
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1,
@@ -135,11 +136,17 @@ ul {
   display: block;
   background-color: transparent;
   border: none;
+  padding: 16px 16px 0 0;
 }
 @media screen and (min-width: 1200px) {
   .header-burger {
     display: none;
   }
+}
+
+.mobile-close {
+  display: flex;
+  margin-left: auto;
 }
 
 .button-top {
@@ -523,7 +530,7 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1240px;
   padding: 0 24px;
   margin: 0 auto;
 }
@@ -560,6 +567,11 @@ ul {
     content: "";
     right: 0;
     bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2ddpx) {
+  .footer__content::after {
+    background-image: url(../images/footer-photo@2x.png);
   }
 }
 .footer__nav {
@@ -629,10 +641,11 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 100px;
+  padding: 32px 0;
+  margin: 0 auto;
   gap: 240px;
   position: absolute;
-  max-width: 1440px;
+  max-width: 1240px;
   width: 100%;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -657,7 +670,7 @@ ul {
 .header-container__social-icons-flex {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header-container__social-icons-flex {
     display: flex;
     gap: 32px;
@@ -674,8 +687,14 @@ ul {
 @media screen and (min-width: 768px) {
   .hero-container {
     height: 100%;
+    width: 100%;
     background-image: linear-gradient(89.38deg, #ffffff 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%), url(../images/main-photo.jpg);
     padding: 106px 0 0 205px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ddpx) {
+  .hero-container {
+    background-image: linear-gradient(89.38deg, #ffffff 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%), url(../images/main-photo@2x.jpg);
   }
 }
 .hero-container__subtitle {
@@ -731,7 +750,7 @@ ul {
   width: 100%;
   height: 800px;
   background-color: var(--white);
-  transform: translateX(200%);
+  transform: translateX(100%);
   transition: transform 0.3s;
 }
 .mobile-menu.is-open {
@@ -866,7 +885,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .why-we-content {
-    padding: 0 190px 96px;
+    padding: 0 90px 96px;
   }
 }
 .why-we-content__background {

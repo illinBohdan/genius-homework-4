@@ -28,6 +28,12 @@
         content: '';
         right: 0;
         bottom: 0;
+
+        @media screen and (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2ddpx) {
+          background-image: url(../images/footer-photo@2x.png);
+        }
       }
     }
   }
