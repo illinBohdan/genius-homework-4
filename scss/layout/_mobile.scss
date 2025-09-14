@@ -1,4 +1,4 @@
-.mobile-menu {
+.mobile {
   position: fixed;
   top: 0;
   left: 0;
@@ -7,6 +7,24 @@
   background-color: var(--white);
   transform: translateX(100%);
   transition: transform 0.3s;
+  display: flex;
+
+  &__content {
+    padding: 16px 20px;
+  }
+
+  &__menu {
+    margin-top: 32px;
+  }
+
+  &__link {
+    margin-bottom: 16px;
+  }
+
+  &__social-icons {
+    display: flex;
+    gap: 16px;
+  }
 
   &.is-open {
     transform: translateX(0);

@@ -12,12 +12,13 @@
     background-size: cover;
     position: absolute;
     width: 100%;
-    height: 1505px;
+    height: 940px;
     left: 0;
     top: -160px;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       top: -210px;
+      height: 1505px;
       background-image: url(../images/background-why.png);
     }
   }

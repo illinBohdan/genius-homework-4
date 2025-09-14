@@ -62,6 +62,26 @@
   }
 }
 
+
+/* -------------------------------------mobile-------------------- */
+
+.icon-close-mobile {
+  stroke-width: 4px;
+  stroke: var(--basick-black);
+  fill: transparent;
+  position: relative;
+  top: -2px;
+  left: -7px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
 /* -------------------------------------Section why--------------------- */
 
 .why-we-icons {

@@ -1,7 +1,9 @@
 @use '../abstracts/variables' as *;
 .contact-content {
+padding: 0;
+   @media screen and (min-width: $bp-desktop) {
   padding-bottom: 94px;
-
+   }
   &__title {
     font-family: Roboto;
     font-weight: 500;
