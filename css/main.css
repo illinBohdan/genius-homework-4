@@ -42,12 +42,6 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-family: Play;
-  font-weight: 700;
-  font-size: 64px;
-}
-
 h3 {
   font-weight: 600;
   font-size: 22px;
@@ -108,6 +102,18 @@ ul {
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/roboto-v48-latin-900.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/Play-Regular.ttf");
+}
+@font-face {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../../fonts/Play-Bold.ttf");
 }
 /* ---------------------------Animation---------------------------- */
 @keyframes spinScale {
@@ -503,7 +509,7 @@ ul {
 @media screen and (min-width: 768px) {
   .about-content__title {
     margin-bottom: 40px;
-    font-family: Play;
+    font-family: Play, sans-serif;
     font-weight: 700;
     font-size: 64px;
   }
@@ -561,7 +567,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .contact-content__title {
-    font-family: Play;
+    font-family: Play, sans-serif;
     font-weight: 700;
     font-size: 64px;
     margin-bottom: 48px;
@@ -739,7 +745,19 @@ ul {
   background-position: right;
   background-size: cover;
 }
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ddpx) {
+  .hero-container {
+    background-image: linear-gradient(56.68deg, #ffffff 20.92%, rgba(255, 255, 255, 0.78) 44.46%, rgba(255, 255, 255, 0.2) 58.9%, rgba(255, 255, 255, 0) 72.45%), url(../images/main-photo@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
+  .hero-container {
+    height: 100%;
+    width: 100%;
+    padding: 106px 0 0 205px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero-container {
     height: 100%;
     width: 100%;
@@ -747,7 +765,7 @@ ul {
     padding: 106px 0 0 205px;
   }
 }
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ddpx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2ddpx) {
   .hero-container {
     background-image: linear-gradient(89.38deg, #ffffff 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%), url(../images/main-photo@2x.jpg);
   }
@@ -768,7 +786,7 @@ ul {
   font-size: 54px;
   font-weight: 700;
   line-height: 0.8;
-  font-family: Play;
+  font-family: Play, sans-serif;
   margin-bottom: 32px;
   text-align: center;
 }
@@ -918,7 +936,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .procedur-content__title {
-    font-family: Play;
+    font-family: Play, sans-serif;
     font-weight: 700;
     font-size: 64px;
     margin-bottom: 48px;
@@ -957,8 +975,11 @@ ul {
   }
 }
 
-.why-we-content {
+.why-we-section {
   position: relative;
+}
+
+.why-we-content {
   padding: 0 22px 40px;
 }
 @media screen and (min-width: 1200px) {
@@ -978,6 +999,13 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .why-we-content__background {
+    top: -116px;
+    height: 1505px;
+    background-image: url(../images/background-why.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .why-we-content__background {
     top: -210px;
     height: 1505px;
     background-image: url(../images/background-why.png);
@@ -994,12 +1022,12 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .why-we-content__title {
-    font-family: Play;
+    font-family: Play, sans-serif;
     font-weight: 700;
     font-size: 64px;
     margin: 0 auto;
     padding-bottom: 48px;
-    max-width: 432px;
+    max-width: 446px;
   }
 }
 .why-we-content__list {
