@@ -593,11 +593,13 @@ ul {
   max-width: 1240px;
   padding: 0 24px;
   margin: 0 auto;
+  min-width: 360px;
 }
 
 .footer {
   background-color: var(--basick-black);
   background-image: url(../images/background-line.png);
+  min-width: 360px;
 }
 .footer__content {
   display: flex;
@@ -996,6 +998,7 @@ ul {
   height: 940px;
   left: 0;
   top: -160px;
+  min-width: 360px;
 }
 @media screen and (min-width: 768px) {
   .why-we-content__background {

@@ -20,6 +20,7 @@
     height: 940px;
     left: 0;
     top: -160px;
+    min-width: 360px;
 
     @media screen and (min-width: $bp-tablet) {
       top: -116px;

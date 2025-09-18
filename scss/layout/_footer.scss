@@ -2,6 +2,7 @@
 .footer {
   background-color: var(--basick-black);
   background-image: url(../images/background-line.png);
+  min-width: 360px;
 
   &__content {
     display: flex;
