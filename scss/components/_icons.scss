@@ -13,31 +13,30 @@
 .header-menu {
   stroke-width: 0;
   fill: var(--white);
-
 }
 /* ---------------------------stars---------------------------- */
 
 .icon-star64 {
-  position: relative;
-  top: -361px;
-  left: 136px;
+  position: absolute;
+  bottom: 286px;
+  left: 804px;
   display: inline-block;
   fill: var(--star);
 }
 
 .icon-star40 {
-  position: relative;
-  top: -687px;
-  left: 417px;
+  position: absolute;
+  top: 22px;
+  left: 1172px;
   display: inline-block;
   fill: var(--brand-blue);
   transform: rotate(60deg);
 }
 
 .icon-star16 {
-  position: relative;
-  top: -481px;
-  left: 370px;
+  position: absolute;
+  top: 260px;
+  left: 1165px;
   display: inline-block;
   fill: var(--grey-for-small);
   transform: rotate(8deg);
@@ -62,7 +61,6 @@
   }
 }
 
-
 /* -------------------------------------mobile-------------------- */
 
 .icon-close-mobile {
@@ -86,7 +84,6 @@
 
 .why-we-icons {
   fill: var(--brand-blue);
-  padding-top: 5px;
   margin-bottom: 8px;
 }
 
@@ -118,11 +115,11 @@
   display: inline-block;
   fill: var(--white);
   margin-right: 20px;
-  
+
   @media screen and (min-width: $bp-desktop) {
-  width: 42px;
-  height: 42px;
-  margin-right: 24px;
+    width: 42px;
+    height: 42px;
+    margin-right: 24px;
   }
 
   &:hover {

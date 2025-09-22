@@ -1,16 +1,15 @@
 @use '../abstracts/variables' as *;
 .about-content {
-  
-  padding-bottom: 104px;
+  padding-bottom: 176px;
 
   @media screen and (min-width: $bp-desktop) {
     display: flex;
-    padding: 0 100px 176px 100px;
     gap: 32px;
   }
 
   &__left-block {
     padding: 0;
+    position: relative;
     @media screen and (min-width: $bp-tablet) {
       flex-basis: calc(57% - 16px);
       padding: 40px 10px 0 0;
@@ -61,7 +60,24 @@
     @media screen and (min-width: $bp-desktop) {
       display: inline;
       flex-basis: calc(34% - 16px);
-      max-height: 695px;
+      flex-grow: 1;
     }
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__image-top {
+    width: 327px;
+    align-self: flex-start;
+  }
+
+  &__image-bottom {
+    width: 327px;
+    align-self: flex-end;
+    
   }
 }

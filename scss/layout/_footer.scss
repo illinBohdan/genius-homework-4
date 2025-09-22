@@ -53,6 +53,7 @@
 
   &__address {
     display: none;
+    font-style: normal;
     @media screen and (min-width: $bp-desktop) {
       display: block;
     }

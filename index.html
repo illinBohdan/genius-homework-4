@@ -11,9 +11,9 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header-container">
       <div class="container">
-        <nav class="header-container">
+        <nav class="header-container__nav">
           <a href="/">
             <img src="./images/logo.svg" alt="логотип клініки" />
           </a>
@@ -95,17 +95,17 @@
           </div>
           <button class="mobile-close menu-btn-close" type="button">
             <svg class="icon-close-mobile" width="12px" height="12px">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
           </button>
         </div>
       </div>
     </header>
 
     <main>
-      <section>
+      <section class="hero-container">
         <div class="container">
-          <div class="hero-container">
+          <div class="hero-container__content">
             <p class="hero-container__subtitle">Косметологічна клініка</p>
             <h1 class="hero-container__title text-brand">beauty zone</h1>
             <button class="button-top modal-btn-open" type="button">
@@ -137,15 +137,7 @@
                   <br />
                   З нами краса назавжди!
                 </p>
-              </div>
-            </div>
-            <div class="about-content__right-block">
-              <img
-                srcset="./images/faces.jpg 1x, ./images/faces@2x.jpg 2x"
-                src="./images/faces.jpg"
-                alt="обличя до і після процедури"
-              />
-              <div class="icon-star64">
+                <div class="icon-star64">
                 <svg width="64px" height="64px">
                   <use href="./images/icons.svg#icon-star"></use>
                 </svg>
@@ -160,6 +152,30 @@
                   <use href="./images/icons.svg#icon-star"></use>
                 </svg>
               </div>
+              </div>
+            </div>
+            <div class="about-content__right-block">
+              <div class="about-content__images">
+                <img
+                  class="about-content__image-top"
+                  srcset="
+                    ./images/face1_top.jpg    1x,
+                    ./images/face1_top@2x.jpg 2x
+                  "
+                  src="./images/face1_top.jpg"
+                  alt="обличя до процедури"
+                />
+                <img
+                  class="about-content__image-bottom"
+                  srcset="
+                    ./images/face2_bottom.jpg    1x,
+                    ./images/face2_bottom@2x.jpg 2x
+                  "
+                  src="./images/face2_bottom.jpg"
+                  alt="обличя після процедури"
+                />
+              </div>
+              
             </div>
           </div>
         </div>
@@ -477,7 +493,7 @@
                     class="footer_link"
                     href="https://maps.app.goo.gl/F9UwS36y22iKu2RR6"
                     target="_blank"
-                    >Україна, м. Київ, вул. Тараса Шевченка 5
+                    >Україна, м. Київ, <br> вул. Тараса Шевченка 5
                   </a>
                 </li>
               </ul>
