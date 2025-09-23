@@ -3,11 +3,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
+  height: 800px; // я міняв на 100% але тоді білий фон лише на висоту хедера
   background-color: var(--white);
   transform: translateX(100%);
   transition: transform 0.3s;
   display: flex;
+  z-index: 99;
+  display: none;
 
   &__content {
     padding: 16px 20px;
@@ -28,5 +30,6 @@
 
   &.is-open {
     transform: translateX(0);
+    display: flex;
   }
 }

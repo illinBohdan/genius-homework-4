@@ -54,6 +54,14 @@
     }
   }
 
+  &__stars{
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+
+  }
+
   &__right-block {
     display: none;
 
