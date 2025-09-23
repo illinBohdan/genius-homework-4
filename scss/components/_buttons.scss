@@ -4,7 +4,7 @@
   display: block;
   background-color: transparent;
   border: none;
- 
+
   @media screen and (min-width: $bp-desktop) {
     display: none;
   }
@@ -81,4 +81,14 @@
     background-color: var(--white);
     color: var(--basick-black);
   }
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 24px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
 }

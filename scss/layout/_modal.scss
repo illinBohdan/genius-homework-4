@@ -1,66 +1,29 @@
 @use '../abstracts/variables' as *;
-.backdrop{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 55;
-    
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
 
-.modal{
-    max-width: 724px;
-    max-height: 682px;
-    min-width: 320px;
-    border-radius: 48px;
-    background-color: var(--basick-black);
-    background-image: url(../images/background-line.png);
-    position: relative;
-    text-align: center;
-    padding: 42px 5px;
-    margin: 10px; 
+.modal {
+  max-width: 724px;
+  max-height: 682px;
+  min-width: 320px;
+  border-radius: 48px;
+  background-color: var(--basick-black);
+  background-image: url(../images/background-line.png);
+  position: relative;
+  text-align: center;
+  padding: 42px 5px;
+  margin: 10px;
 
-    @media screen and (min-width: $bp-tablet) {
-      padding: 42px 144px;
-    }
-}
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+  }
 
-.modal-btn-close{
-position: absolute;
-top: 24px;
-right: 12px;
-width: 32px;
-height: 32px;
-background-color: transparent;
-border:none;
-
-}
-
-.modal-title-text{
+  &__title-text {
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
     color: var(--white);
     margin-bottom: 40px;
     line-height: 1;
-}
+  }
 
-.under-modal-title-text {
-    margin:0 auto 32px;
-    line-height: 1;
-    max-width: 276px;
-    
 }
-
-.under-modal-title-text span{
-    color: var(--brand-blue);
-}
-
