@@ -9,9 +9,10 @@
     ),
     url(../images/main-photo.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: right top;
   background-size: cover;
   min-width: 360px;
+  padding-bottom: 156px;
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -26,14 +27,10 @@
       url(../images/main-photo@2x.jpg);
   }
 
-  @media screen and (min-width: $bp-tablet) {
-    // height: 100%;
-    // width: 100%;
-  }
-
   @media screen and (min-width: $bp-desktop) {
     height: 100%;
     width: 100%;
+    background-position: center top;
     background-image: linear-gradient(
         89.38deg,
         #ffffff 30.62%,

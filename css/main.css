@@ -141,7 +141,6 @@ ul {
   display: block;
   background-color: transparent;
   border: none;
-  padding: 16px 80px 0 0;
 }
 @media screen and (min-width: 1200px) {
   .header-burger {
@@ -154,7 +153,7 @@ ul {
   margin-left: auto;
   background-color: transparent;
   border: none;
-  padding: 16px 90px 0 0;
+  padding: 16px 20px 0 0;
   width: 24px;
   height: 24px;
 }
@@ -625,7 +624,7 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 32px 91px 66px;
+  padding: 32px 24px 66px;
 }
 @media screen and (min-width: 1200px) {
   .footer__content {
@@ -767,9 +766,10 @@ ul {
 .hero-container {
   background-image: linear-gradient(56.68deg, #ffffff 20.92%, rgba(255, 255, 255, 0.78) 44.46%, rgba(255, 255, 255, 0.2) 58.9%, rgba(255, 255, 255, 0) 72.45%), url(../images/main-photo.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: right top;
   background-size: cover;
   min-width: 360px;
+  padding-bottom: 156px;
 }
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ddpx) {
   .hero-container {
@@ -780,6 +780,7 @@ ul {
   .hero-container {
     height: 100%;
     width: 100%;
+    background-position: center top;
     background-image: linear-gradient(89.38deg, #ffffff 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%), url(../images/main-photo.jpg);
   }
 }
